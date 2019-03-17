@@ -6,7 +6,11 @@
   <name>springboot-first-example</name>
   <description>springboot-first-example</description>
   <url>http://maven.apache.org</url>
+<packaging>war</packaging>
+
 <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent -->
+
+
 <parent>
 <groupId>org.springframework.boot</groupId>
 <artifactId>spring-boot-starter-parent</artifactId>
@@ -23,9 +27,19 @@
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
 <dependency>
-<groupId>org.springframework.boot</groupId>
-<artifactId>spring-boot-starter-web</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
 </dependency>
+		
 </dependencies>
   
 </project>
